@@ -1,0 +1,29 @@
+<h3>User list</h3>
+<div class="userlisting">
+    <div class="u-listing">
+
+        <div class="user_main" *ngFor="let users of usersList">
+            <div class="user_img"><img src="./assets/images/user.png" alt=""></div>
+            <div class="user_cont">
+                <ul>
+                    <li class="username">{{users.name}}</li>
+                    <li class="user_n">
+                        <p><span>@</span>{{users.username}}</p>
+                    </li>
+                    <li class="user_e">
+                        <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span>{{users.email}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="scroll_right"></div>
+</div>
+<br>
+<h3>User Tasks</h3>
+<div class="userlisting">
+<div class="u-listing u-tasks">
+    <p *ngFor="let todos of todosList" class="usertask"><a href="">#{{todos.title}}</a></p>
+</div>
+<div class="scroll_right"></div>
+</div>

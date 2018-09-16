@@ -1,0 +1,119 @@
+.header{ width: 100%;margin: 0;padding: 0 0; display: inline-block; background-image: url(../../../assets/images/bg.png); background-repeat: repeat; background-color:#08122d;}
+
+.headertop{ width: 100%; float: left; margin: 0; padding:15px 0;}
+.hbtn{ float: left; color: #fff; font-size: 18px;}
+
+.headertop ul{width:auto; float:right; margin: 0; padding: 0;}
+.headertop ul li{width:auto; float:left; margin: 0 0 0 5px; padding: 0 0px; color: #fff; position: relative; list-style: none;font-size: 18px;}
+.headertop ul li a{ padding:5px 10px; margin: 0;}
+.headertop ul li a i{ color: #fff; font-size: 18px;}
+
+.headermiddel{ width: 100%; margin: 0; padding: 0;display: inline-block;padding: 0 0 0 50px;}
+.h-profile{ display:inline-block;justify-content: left;align-content: center;}
+.h-profile span{background: #eee; border-radius:100%; overflow: hidden; width:50px; height: 50px; float: left;}
+.h-profile span img{ max-width: 100%; width: 100%; height: 100%;}
+.h-profile h3{ width:auto; margin: 0; padding: 0 0 0 15px; font-size: 18px; color: #fff;float: left;}
+.h-profile h3 p{width: 100%; margin: 0; padding: 0 0 5px 0px; font-size: 14px;}
+
+
+.headerbottom{ width: 100%; margin: 0; padding: 0;display: inline-block;padding: 0 0 0 50px;}
+.twitterbox{width: 100%; max-width:300px; margin:25px 0 0 0; padding: 0; float: left;display: flex;justify-content:left;align-content: center;}
+.twitterbox p{ width: 100%; margin: 0; padding: 0 0 8px 0; color: #fff; font-size: 18px; font-weight: 600;}
+.twitterbox p span{ width:33.3%;float: left; margin:0; padding: 0;}
+.twitterbox p span span{ width:100%;float: left; margin: 0; padding: 0; font-size: 14px; font-weight: 300;}
+
+.hmenuright{width: 100%; margin: 0; padding:25px 0 0 350px;}
+
+.navigation {
+    display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0; padding: 0 0em;
+  }
+  .navigation li{ list-style: none;padding: 0 1em; position: relative;}
+  .navigation li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em  0em;
+    color: white;
+    vertical-align: top;
+    
+  }
+  .navigation li a i{ float: left; margin:4px 5px 0 0; padding: 0; vertical-align: top;} 
+  .navigation li a i.discover{margin:-4px 5px 0 0; padding:0px 0px 0 0; font-weight: bold; font-size:22px;} 
+  .navigation li a:hover:after{-webkit-transition:all .5s ease;transition:all .5s ease;outline:0}
+  .navigation li a:hover:after, .navigation li.active a:after {
+   background:#86c8fc;
+   color:#86c8fc;
+   content: '';
+   position: absolute;left: 0; bottom: 0; width: 100%; height:3px;
+   -webkit-transition:all .5s ease;transition:all .5s ease;outline:0;
+  }
+  @media all and (max-width: 991px) {
+    .navigation li{ list-style: none;padding: 0 0.5em;}
+    .h-left{ max-width: 25%;}
+
+  }
+  @media all and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
+  @media all and (max-width: 600px) {
+    .navigation {
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      padding: 0;
+    }
+  
+    .navigation a {
+      text-align: center;
+      padding: 10px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  
+    .navigation li:last-of-type a {
+      border-bottom: none;
+    }
+  }
+
+
+  .fa-file-photo-o:before, .fa-file-picture-o:before, .fa-file-image-o:before {
+    content: "\f1c5";
+}
+
+li.dropdown .dropdown-menu{transform: translate3d(-134px, 43px, 0px);}
+li.dropdown .dropdown-menu li{ font-size: 16px;}
+
+
+.search-inline{position: absolute; width:0px; margin: 0; padding: 0; left:-192px; top:30px;opacity: 0; overflow: hidden;}
+.search-inline input{border:none; background: #fff; border-radius:0px; outline: 0;  padding:6px 16px; }
+.search-inline.main{opacity: 1; overflow: visible;}
+.headertop ul li a.active{background: #fff;}
+.headertop ul li a.active i{ color: black;}
+
+@media all and (max-width: 767px) {
+  .headermiddel{
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 15px 0 0 0px;
+
+}
+.hmenuright{  padding: 25px 0 0 267px; }
+
+}
+
+@media all and (max-width: 584px) {
+  .twitterbox{ width: 100%; max-width: 100%;padding: 15px 0 0 0;}
+  .hmenuright{width: 100%;margin: 0;padding: 15px 0 0 0px; float: left;}
+  .navigation{ flex-flow: nowrap;  padding: 0;}
+  .navigation a{border: none;}
+  .twitterbox p{ text-align: center;}
+  .navigation li a{ text-align: center;}
+  .navigation li a i{ display: inline-block;float: none;}
+}
+

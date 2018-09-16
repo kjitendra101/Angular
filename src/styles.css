@@ -1,1 +1,181 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    overflow-x: hidden;
+    font-weight: 400;
+    background: #f6f6f6;
+  }
+  a{-webkit-transition:all .5s ease;transition:all .5s ease;outline:0}
+  #wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  /* #wrapper.toggled {
+    padding-left: 250px;
+  } */
+  #wrapper.toggled{ margin-left:250px; }
+.container{ max-width:100%; width: 100%;}
+.btn{ box-shadow: none !important;}
+button.btn{ background:#86c8fc !important; border-color:#86c8fc !important; outline: 0;box-shadow: none; }
+button.btn:hover, button.btn:focus{opacity: 0.9;outline: 0;}
+  
+  #sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background:#08122d;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
+  
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+  }
+  
+  #wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+  }
+  
+  
+  /* Sidebar Styles */
+  
+  .sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+  }
+  
+  .sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #999999;
+  }
+  
+  .sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .sidebar-nav li a:active, .sidebar-nav li a:focus {
+    text-decoration: none;
+  }
+  
+  .sidebar-nav>.sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+  }
+  
+  .sidebar-nav>.sidebar-brand a {
+    color: #999999;
+  }
+  
+  .sidebar-nav>.sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+  }
+
+  @media(min-width:768px) {
+    #wrapper {
+      padding-left: 0;
+    }
+    /* #wrapper.toggled {
+      padding-left: 250px;
+    } */
+    #sidebar-wrapper {
+      width: 0;
+    }
+    /* #wrapper.toggled #sidebar-wrapper {
+      width: 250px;
+    } */
+    #page-content-wrapper {
+      padding: 0px;
+      /* position: relative; */
+    }
+    #wrapper.toggled #page-content-wrapper {
+      /* position: relative; */
+      margin-right: 0;
+    }
+  }
+
+  
+  
+  .postcont ul li{list-style: none;}
+  .h-left h3{width: 100%; margin:15px 0 0 0; padding:5px 0; font-size: 22px;}
+
+  
+  .main-container{ width: 100%; margin: 0; padding: 0 0px; float: left;  display: flex;
+    flex-direction: row;flex-wrap: wrap;min-height:70vh;}
+
+.h-left{ width: 100%; max-width:25%;  margin: 0; padding: 0 15px; background: #fff;height:100%;box-shadow:3px 2px 5px #e2e2e2; }
+.h-center{ width: 100%; max-width:60%; margin: 0; padding: 0 15px;}
+.h-right{ width: 100%; max-width:15%; margin: 0; padding: 0 15px;}
+
+.postcont{ background: #fff;box-shadow:0px 0px 5px #e2e2e2; margin:15px 0; padding:15px;}
+.user_main{ width: 100%; margin:15px 0 0 0; padding:15px 0; display: flex; flex-direction: row; flex-wrap: wrap; border-bottom: 1px solid #efefef;}
+.user_img{ width: 55px; margin: 0; padding: 0;}
+.user_img img{ max-width:100%; border-radius:100%; }
+.user_cont{ width:80%; margin: 0; padding:0 0 0 15px;}
+.user_cont ul{ width: 100%; margin: 0; padding: 0; float: left;}
+.user_cont ul li{ width:100%; margin: 0; padding:0 5px 0 0; float: left; list-style: none;}
+.username{width:auto; margin: 0; padding:0 10px 0 0;color: #000; font-weight:600; font-size: 15px;}
+.username h3{ font-size: 22px;}
+.user_n{ width:auto; margin: 0; padding:0 10px 0 0;color: #86c8fc; font-size: 15px;}
+.user_n p{padding: 0; margin: 0;}
+.user_e{width:100% !important; margin: 0; padding: 0; float: left; font-size:15px; color: #333;}
+
+
+@media all and (max-width: 991px) {
+  .h-left{ width: 100%; max-width:30%; }
+  .h-center{ width: 100%; max-width:60%;}
+  .h-right{ width: 100%; max-width:10%;}
+}
+
+@media all and (max-width:767px) {
+  .main-container{display: flex;flex-direction: row;}
+  .h-left{ width: 100%; max-width:100%;padding: 0 15px 25px 15px; height: auto;order:2;position: relative;
+    z-index: 1; }
+  .h-center{ width: 100%; max-width:100%;padding: 0 0px; order:1;position: relative;
+    z-index: 1;}
+  /* .h-right{ width: 100%; max-width:10%;order: 3;} */
+
+  .h-right{
+      width: auto;
+      max-width: inherit;
+      order: 3;
+      position: fixed;
+      bottom: 15px;
+      right: 10px;
+      z-index: 9999;
+    
+    }
+   
+}
+
+@media all and (max-width:320px) {
+.user_cont {width: 78%;}
+}

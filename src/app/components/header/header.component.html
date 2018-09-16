@@ -1,0 +1,63 @@
+<div class="header">
+  <div class="container">
+    <div class="headertop">
+      <a href="#menu-toggle" class="hbtn" id="menu-toggle"><i class="fa fa-align-left" aria-hidden="true"></i></a>
+      <ul>
+          <li><a href="JavaScript:Void(0);" class="search-open"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <form class="search-inline" id="demo-2">
+              <input type="search" placeholder="Search">
+            </form>
+          </li>
+          <li><a href="JavaScript:Void(0);"><i class="fa fa-envelope-open" aria-hidden="true"></i></a></li>
+          <li class="dropdown show"><a href="JavaScript:Void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Setting</a></li>
+                <li><a class="dropdown-item" href="#">Edit Profile</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        
+
+       
+    </div>
+    <div class="headermiddel">
+      <div class="h-profile">
+        <span><img src="./assets/images/user.png"></span>
+        <h3>
+          <p>@Rco_Monteiro</p>
+          Rico Monteiro
+        </h3>
+      </div>  
+      <div class="clearfix"></div>
+      <div class="twitterbox">
+          <p>
+            <span>
+               <span>Comments</span>
+               {{commentsCount}}
+            </span>
+            <span>
+               <span>Albums</span>
+               {{albumsCount}}
+            </span>
+            <span>
+               <span>Photos</span>
+               {{photosCount}}
+            </span>
+          </p>
+        </div> 
+        <div class="hmenuright">
+            <ul class="navigation">
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/albums']"><i class="fa fa-file-image-o" aria-hidden="true"></i> Albums</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/photos']"><i class="fa fa-camera" aria-hidden="true"></i> Photos</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/profile']"><i class="fa fa-user" aria-hidden="true"></i> Me</a></li>
+              </ul>
+         </div> 
+    </div>
+    <!-- <div class="headerbottom">
+    
+    </div> -->
+  </div>
+
+</div>

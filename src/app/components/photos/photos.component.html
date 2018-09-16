@@ -1,0 +1,40 @@
+<div id="wrapper">
+    <app-sidebarmenu></app-sidebarmenu>
+    <app-header></app-header>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="main-container">
+                    <div class="h-left">
+                        <app-sidebar></app-sidebar>
+                    </div>
+
+                    <div class="h-center">
+                        <div class="postcont photoslisting">
+                            <h3>Photos List</h3>
+                            <div class="user_main" *ngFor="let photos of photosList">
+                                <!-- <div class="user_img"><img src="{{photos.thumbnailUrl}}" alt=""></div> -->
+                                <div class="user_cont">
+                                    <ul>
+                                        <li class="username">
+                                            <h3>{{photos.title}}</h3>
+                                        </li>
+                                        <li class="user_e">
+                                            <p><img src="{{photos.url}}" alt=""></p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h-right"> <app-rightbar></app-rightbar></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+    <!-- <app-footer></app-footer> -->
+</div>
+<!-- /#wrapper -->

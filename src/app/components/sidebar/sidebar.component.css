@@ -1,0 +1,53 @@
+.user_main{ width: 100%; margin:15px 0 0 0; padding:5px 0; display: flex; flex-direction: row; flex-wrap: wrap;}
+
+.user_img{ width: 55px; margin: 0; padding: 0;}
+.user_img img{ max-width:100%; border-radius:100%; }
+
+.user_cont{ width:80%; margin: 0; padding:0 0 0 15px;}
+.user_cont ul{ width: 100%; margin: 0; padding: 0; float: left;}
+.user_cont ul li{ width:auto; margin: 0; padding:0 5px 0 0; float: left; list-style: none;}
+
+.user_cont ul li:last-child{}
+
+.username{width:auto; margin: 0; padding:0 10px 0 0;color: #000; font-weight:600; font-size: 15px;}
+.user_n{ width:auto; margin: 0; padding:0 10px 0 0;color: #86c8fc; font-size: 15px;}
+.user_n p{padding: 0; margin: 0;}
+
+.user_e{width:100% !important; margin: 0; padding: 0; float: left; font-size: 13px; color: #ccc;}
+.user_e span{ margin: 0; padding: 0 5px 0 0;}
+
+.userlisting{position: relative;}
+.u-listing{position: relative;max-height:325px;overflow-y:scroll;}
+.scroll_right{ width:20px; height: 100%; position: absolute; content: ''; right: 0; top: 0; background: #fff;}
+
+.u-listing.u-tasks{max-height:725px;}
+
+
+.u-tasks{ width: 100%; margin: 0; padding:15px 0px;}
+.u-tasks p.usertask{padding: 0 0 5px 0; margin: 0;}
+.u-tasks p.usertask a{ font-size: 15px; font-weight:500; color: #86c8fc; padding: 0 0 0px 0; margin: 0;}
+
+@media all and (max-width:1280px) {
+    .user_img{ width:45px;}   
+}
+@media all and (max-width:1024px) {
+    .user_img{ width:40px;}   
+}
+@media all and (max-width: 991px) {
+.user_img{ width: 30px;}
+.u-listing.u-tasks{max-height: 325px;}
+
+}
+@media all and (max-width: 767px) {
+.scroll_right{ display: none;}
+}
+
+
+
+
+
+
+
+
+
+

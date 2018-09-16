@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "testapp": {
+    "interview-test": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/testapp",
+            "outputPath": "dist/interview-test",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,14 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.slim.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/tether/dist/js/tether.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -50,18 +55,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "testapp:build"
+            "browserTarget": "interview-test:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "testapp:build:production"
+              "browserTarget": "interview-test:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "testapp:build"
+            "browserTarget": "interview-test:build"
           }
         },
         "test": {
@@ -95,7 +100,7 @@
         }
       }
     },
-    "testapp-e2e": {
+    "interview-test-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "targets": {
@@ -103,11 +108,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "testapp:serve"
+            "devServerTarget": "interview-test:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "testapp:serve:production"
+              "devServerTarget": "interview-test:serve:production"
             }
           }
         },
@@ -123,5 +128,5 @@
       }
     }
   },
-  "defaultProject": "testapp"
+  "defaultProject": "interview-test"
 }
