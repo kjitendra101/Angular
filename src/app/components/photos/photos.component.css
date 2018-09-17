@@ -2,6 +2,7 @@
 .user_e{width:100% !important; margin: 0; padding: 0; float: left; font-size:15px; color: #333;}
 .user_e p{ width: 100%; margin: 0; padding: 0;}
 .user_e p img{ max-width: 100%; width: 100%;}
+.photoslisting .user_cont {width: 100%;}
 
 @media all and (max-width:767px) {
 .photoslisting .user_cont {

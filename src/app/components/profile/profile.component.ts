@@ -18,4 +18,6 @@ export class ProfileComponent implements OnInit {
     this.specific.getSpecific().subscribe(response => {this.specificList = response;})
   }
 
+
+
 }

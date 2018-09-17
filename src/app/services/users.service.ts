@@ -10,5 +10,9 @@ export class UsersService {
   getUsers():any{
     return this.http.get("https://jsonplaceholder.typicode.com/users")
   }
+
+  addUser(user){
+    return this.http.post(" https://jsonplaceholder.typicode.com/posts",user)
+  }
 }
 

@@ -13,7 +13,8 @@
                     <div class="h-center">
                         <div class="postcont">
                             <h3>All Post list</h3>
-                            <div class="user_main" *ngFor="let posts of postsList">
+                            <div class="" *ngFor="let posts of postsList; let i = index">
+                                <div class="user_main" *ngIf="i < 20">
                                 <div class="user_img"><img src="./assets/images/user.png" alt=""></div>
                                 <div class="user_cont">
                                     <ul>
@@ -24,6 +25,7 @@
                                             <p>{{posts.body}}</p>
                                         </li>
                                     </ul>
+                                </div>
                                 </div>
                             </div>
                         </div>

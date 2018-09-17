@@ -13,7 +13,8 @@
                     <div class="h-center">
                         <div class="postcont photoslisting">
                             <h3>Photos List</h3>
-                            <div class="user_main" *ngFor="let photos of photosList">
+                            <div *ngFor="let photos of photosList; let i = index">
+                                <div class="user_main" *ngIf="i < 10">
                                 <!-- <div class="user_img"><img src="{{photos.thumbnailUrl}}" alt=""></div> -->
                                 <div class="user_cont">
                                     <ul>
@@ -25,6 +26,7 @@
                                         </li>
                                     </ul>
                                 </div>
+                            </div>
                             </div>
                         </div>
                     </div>

@@ -1,17 +1,20 @@
 <div id="wrapper">
- <app-sidebarmenu></app-sidebarmenu>
+    <app-sidebarmenu></app-sidebarmenu>
     <app-header></app-header>
     <!-- Page Content -->
     <div id="page-content-wrapper">
         <div class="container">
             <div class="row">
                 <div class="main-container">
-                    <div class="h-left"><app-sidebar></app-sidebar></div>
+                    <div class="h-left">
+                        <app-sidebar></app-sidebar>
+                    </div>
 
                     <div class="h-center">
                         <div class="postcont">
                             <h3>Albums List</h3>
-                            <div class="user_main" *ngFor="let albums of albumsList">
+                            <div *ngFor="let albums of albumsList; let i = index">
+                                <div class="user_main" *ngIf="i < 20">
                                     <div class="user_img"><img src="./assets/images/user.png" alt=""></div>
                                     <div class="user_cont">
                                         <ul>
@@ -24,11 +27,14 @@
                                         </ul>
                                     </div>
                                 </div>
+                            </div>
 
                         </div>
                     </div>
-                    
-                    <div class="h-right"> <app-rightbar></app-rightbar></div>
+
+                    <div class="h-right">
+                        <app-rightbar></app-rightbar>
+                    </div>
                 </div>
             </div>
         </div>
